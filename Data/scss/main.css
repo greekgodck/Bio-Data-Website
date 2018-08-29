@@ -257,7 +257,8 @@ main#home h1 {
   display: -ms-grid;
   display: grid;
   grid-gap: 30px;
-      grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+      grid-template-areas: "bioimage bio bio"
+ "job1 job2 job3";
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
 }
@@ -437,12 +438,17 @@ main#home h1 {
   }
   .menu-branding .portrait {
     background: url("../../img/portrait1.jpg");
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     background-size: contain;
+    background-repeat: no-repeat;
   }
   .about-info {
-        grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+        grid-template-areas: "bioimage"
+ "bio"
+ "job1"
+ "job2"
+ "job3";
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
